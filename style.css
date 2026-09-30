@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+    color: #d86b8b;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d86b8b;
+}
+
+/* INÍCIO */
+
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+}
+
+#inicio h2 {
+    font-size: 48px;
+    color: #c65378;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#inicio a {
+    background: #d86b8b;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* SEÇÕES */
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+    color: #c65378;
+}
+
+/* PRODUTOS */
+
+#produtos > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+article {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-8px);
+}
+
+article h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 20px;
+    color: #d86b8b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+article button {
+    border: none;
+    background: #d86b8b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* SOBRE */
+
+#sobre {
+    background: #fff4f7;
+    text-align: center;
+}
+
+#sobre p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* CONTATO */
+
+#contato {
+    text-align: center;
+}
+
+#contato a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: #d86b8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #inicio h2 {
+        font-size: 35px;
+    }
+
+    #produtos > div {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
